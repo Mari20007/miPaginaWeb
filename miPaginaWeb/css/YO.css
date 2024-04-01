@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:wght@400;500;600;700;800;900 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+} 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0%;
+    background-image: url(../imagen/imagen.jpg);
+     }
+
+.container {
+    background-color: rgb(253, 252, 249);
+    width: 160vh;
+    height: 200vh;
+    position:relative ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 20vh;
+}    
+header{
+    width: 160vh;
+    height: 40vh;
+}
+.title {
+    width: 80%;
+    position:absolute;
+    bottom: 84%;
+    transform: translateY(-50%);
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    color: #a36565;
+   
+}
+
+.title span {
+    animation: fade-in-out 3s infinite ease;
+}
+
+.title span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.title h1{ 
+    font-size: 55px;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+
+.hcolor {
+    color: #020202;
+}
+
+.title p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    align-items: center;
+    text-align: right;
+}
+.pcolor {
+    margin: 0;
+    color: white;
+}
+ .logo{
+    width: 10vh;
+    height: 27vh;
+    background-position: right;
+    left: 30%;
+}
+.logo {
+    width: 150px;
+    cursor: pointer; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 153vh;
+    position:absolute;
+    top: 175px;
+    height: 2%;
+    display:grid;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #e08ba7f8;
+    left: 1px;
+    right: 30px;
+
+}
+
+.navbar ul li{
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(233, 81, 139);
+    width: 65%;
+    height: 35px;
+    border-radius: 9px;
+    align-items: center;
+     bottom: 23px;}
+
+.navbar li:hover .subMenu {
+    visibility: visible;
+}
+
+.navbar.active {
+    background: #000000;
+    width: 40%; 
+    opacity: 1;
+    box-shadow: rgba(14, 13, 13, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 5;
+}
+
+.navbar.active .subMenuNav li a{
+    color: #000000;
+}
+
+.navbar.active .subMenu {
+    background-color: #111010;
+}
+
+.navbar.active .subMenuNav {
+    margin: 20px 70px;
+    width: 96%;
+}
+
+
+.navbar ul li::after {
+    margin-top: 40px;
+    content: "";
+    height: 5px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    font-family: "Playfair Display", serif;
+} 
+
+.navbar ul li:hover::after {
+    width: 100%;
+} 
+
+.subMenuNav {
+    display: grid;
+    width: 300%;
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 5px;
+    margin: 20px 80px;
+    
+}
+
+.subMenuNav li {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative; 
+}
+
+.subMenuNav li a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.subMenuNav {
+    position: relative; 
+    top: 0%;
+    left: 50%;
+    display: grid;
+    }
+.subMenuNav li {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.subMenuNav li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff9f9;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+.mipresentacion {
+    background-color: #ffffff;
+    position: absolute;
+    width: 85%;
+    height: 45px;
+    bottom: 40%;
+    left: 110px;
+    border: 2px solid antiquewhite;
+    border-radius: 50px;
+    box-shadow: 20px#eea2a2;
+    text-align: center;
+    box-shadow: 3px 3px 0 0 gray;
+    top: 330px;
+ }
+
+
+
+.aside {
+    background-color: #ffffff;
+    position: relative;
+    width: 25%;
+    height: 30%;
+    bottom: 30%;
+    border: 2px solid antiquewhite;
+    border-radius: 0px;
+    box-shadow: 20px#eea2a2;
+    text-align: right;
+    box-shadow: 3px 3px 0 0 gray;
+    top: 240px;
+    right: 50%;
+    left: 10%;
+}
+.aside{
+    background-image: url(../imagen/gustos1.jpg)
+    
+    }
+ .aside1 {
+ background-color: #ffffff;
+ position: relative;
+ width: 150%;
+height: 130%;
+border: 2px solid antiquewhite;
+border-radius: 0px;
+box-shadow: 20px#eea2a2;
+text-align: left;
+box-shadow: 3px 3px 0 0 gray;
+ top: 10vh;
+ right: 5%;
+left: 200%;
+    }
+
+
+
+
+
+.footer{
+background-color: #ffffff;
+position: relative;
+ justify-content: center;
+ background-color: rgb(233, 81, 139);
+ width: 75%;
+ height: 70px;
+ align-items: center;
+ border: 2px solid antiquewhite;
+ border-radius: 0px;
+ bottom: 10vh;
+ left: 125px;
+ right: 0px;
+}
